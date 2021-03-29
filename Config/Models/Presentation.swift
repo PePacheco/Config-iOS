@@ -22,6 +22,7 @@ struct Presentation: Identifiable {
     var speakers: [Speaker]
     var tag: Tag
     var bannerName: String
+    var isMain: Bool
     
     var banner: Image {
         Image(bannerName)
