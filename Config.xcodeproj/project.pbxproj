@@ -53,8 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				6D1BDA2D26124F3600C44C6C /* ConfigApp.swift */,
-				6D1BDA2F26124F3600C44C6C /* ContentView.swift */,
-				6D1BDA3126124F3700C44C6C /* Assets.xcassets */,
+				6D1BDA402612506800C44C6C /* Resources */,
+				6D1BDA3F2612506300C44C6C /* Models */,
+				6D1BDA3E2612505E00C44C6C /* Views */,
 				6D1BDA3626124F3700C44C6C /* Info.plist */,
 				6D1BDA3326124F3700C44C6C /* Preview Content */,
 			);
@@ -67,6 +68,29 @@
 				6D1BDA3426124F3700C44C6C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D1BDA3E2612505E00C44C6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D1BDA2F26124F3600C44C6C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D1BDA3F2612506300C44C6C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D1BDA402612506800C44C6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D1BDA3126124F3700C44C6C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
