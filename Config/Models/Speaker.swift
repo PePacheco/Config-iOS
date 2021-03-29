@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Speaker.swift
 //  Config
 //
 //  Created by Pedro Gomes Rubbo Pacheco on 29/03/21.
@@ -7,13 +7,14 @@
 
 import SwiftUI
 
-struct User: Identifiable {
+struct Speaker: Identifiable {
     let id: Int
     var name: String
-    var age: Int
-    var email: String
-    var password: String
+    var description: String
+    var role: String
     var imageName: String
+    var links: [String: String]
+    var presentations: [Presentation]
     
     var image: Image {
         Image(imageName)
