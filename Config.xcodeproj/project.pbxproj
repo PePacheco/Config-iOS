@@ -11,6 +11,7 @@
 		6D1BDA3026124F3600C44C6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1BDA2F26124F3600C44C6C /* ContentView.swift */; };
 		6D1BDA3226124F3700C44C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1BDA3126124F3700C44C6C /* Assets.xcassets */; };
 		6D1BDA3526124F3700C44C6C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D1BDA3426124F3700C44C6C /* Preview Assets.xcassets */; };
+		6DB1C25B261251A800077619 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1C25A261251A800077619 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		6D1BDA3126124F3700C44C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D1BDA3426124F3700C44C6C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6D1BDA3626124F3700C44C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DB1C25A261251A800077619 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		6D1BDA3F2612506300C44C6C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6DB1C25A261251A800077619 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				6D1BDA3026124F3600C44C6C /* ContentView.swift in Sources */,
 				6D1BDA2E26124F3600C44C6C /* ConfigApp.swift in Sources */,
+				6DB1C25B261251A800077619 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
