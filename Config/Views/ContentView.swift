@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+        SpeakerItem(Speaker(id: 1, name: "Jose Tapioca", description: "IDK", role: "Chief Design Office", imageName: "jose-tapioca", links: nil, presentations: nil))    }
 }
 
 struct ContentView_Previews: PreviewProvider {

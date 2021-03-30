@@ -21,11 +21,11 @@ struct SpeakerItem: View {
     var body: some View {
         HStack(alignment: .center) {
             CircleImage(image: image)
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 4) {
                 Text(name)
-                    .font(Font.custom("RobotoMono-Bold", size: 25))
+                    .font(Font.custom("RobotoMono-Bold", size: 27))
                 Text(role)
-                    .font(Font.custom("Inter-Regular", size: 20))
+                    .font(Font.custom("Inter-Regular", size: 15))
             }
         }
     }
