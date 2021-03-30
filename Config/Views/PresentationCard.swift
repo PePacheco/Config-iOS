@@ -2,12 +2,48 @@
 //  PresentationCard.swift
 //  Config
 //
-//  Created by Pedro Gomes Rubbo Pacheco on 29/03/21.
+//  Created by Pedro Gomes Rubbo Pacheco on 30/03/21.
 //
 
 import SwiftUI
 
 struct PresentationCard: View {
+    var presentation: Presentation
+    var body: some View {
+        if presentation.isMain {
+            MainPresentation(presentation: presentation)
+        } else {
+            NormalPresentation(presentation: presentation)
+        }
+    }
+}
+
+struct NormalPresentation: View {
+    var presentation: Presentation
+    
+    var body: some View {
+        let names: String = presentation.speakers.reduce("", { $0 + $1.name + ", "})
+        
+        HStack {
+            VStack(alignment: .leading, spacing: 10) {
+                Text(presentation.title)
+                    .fontWeight(.bold)
+                Text(names)
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                Spacer()
+            }
+            .padding()
+            .padding(.top, 20)
+            Spacer()
+        }
+        .frame(width: 250, height: 150)
+        .border(width: 25, edges: [.top], color: .green)
+        .border(Color.black, width: 5)
+    }
+}
+
+struct MainPresentation: View {
     var presentation: Presentation
     var body: some View {
         HStack {
@@ -21,20 +57,24 @@ struct PresentationCard: View {
                 Text(presentation.speakers[0].name)
                     .bold()
                 Text(presentation.speakers[0].role)
-                    .foregroundColor(.gray)
                     .font(.subheadline)
             }
+            .padding()
+            .padding(.top, 20)
             
-            VStack {
+            VStack(alignment: .leading, spacing: 10) {
                 Text(presentation.title)
+                    .fontWeight(.bold)
                 Text(presentation.description)
+                    .font(.subheadline)
+                    .fontWeight(.light)
             }
+            .padding()
+            .padding(.top, 20)
         }
+        .frame(width: 400, height: 200)
+        .border(Color.black, width: 5)
+        .border(width: 25, edges: [.top], color: .black)
     }
 }
 
-struct PresentationCard_Previews: PreviewProvider {
-    static var previews: some View {
-        PresentationCard(presentation: presentations[0])
-    }
-}
