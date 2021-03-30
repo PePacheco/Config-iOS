@@ -17,15 +17,15 @@ struct SpeakerItem: View {
         self.role  = speaker.role
         self.image = speaker.image
     }
+    
     var body: some View {
         HStack(alignment: .center) {
             CircleImage(image: image)
             VStack(alignment: .leading) {
                 Text(name)
                     .font(Font.custom("RobotoMono-Bold", size: 25))
-                    .bold()
                 Text(role)
-                    .font(Font.custom("Inter-Light", size: 20))
+                    .font(Font.custom("Inter-Regular", size: 20))
             }
         }
     }
