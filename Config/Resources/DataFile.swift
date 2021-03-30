@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct DataFile {
+class DataFile {
+    
+    static let shared: DataFile = DataFile()
     
     var speakersData: [Speaker] = []
     var usersData: [User] = []
@@ -17,27 +19,27 @@ struct DataFile {
         
         // users
         
-        var u1: User = User(id: 1, name: "Matheus Homrich", age: 21, email: "mattheushomrich@email.com", password: "123456", imageName: "matheushomrich")
+        let u1: User = User(id: 1, name: "Matheus Homrich", age: 21, email: "mattheushomrich@email.com", password: "123456", imageName: "matheushomrich")
         
-        var u2: User = User(id: 2, name: "Bárbara Pinto", age: 21, email: "barbarapinto@email.com", password: "123456", imageName: "barbarapinto")
+        let u2: User = User(id: 2, name: "Bárbara Pinto", age: 21, email: "barbarapinto@email.com", password: "123456", imageName: "barbarapinto")
         
-        var u3: User = User(id: 3, name: "Anderson Sprenger", age: 23, email: "andersonsprenger", password: "123456", imageName: "andersonsprenger")
+        let u3: User = User(id: 3, name: "Anderson Sprenger", age: 23, email: "andersonsprenger", password: "123456", imageName: "andersonsprenger")
         
-        var u4: User = User(id: 4, name: "Pedro Pacheco", age: 23, email: "pedropacheco@email.com", password: "123456", imageName: "pedropacehco")
+        let u4: User = User(id: 4, name: "Pedro Pacheco", age: 23, email: "pedropacheco@email.com", password: "123456", imageName: "pedropacehco")
         
-        var u5: User = User(id: 5, name: "Nicolas Godoy", age: 21, email: "nicolasgodoy@email.com", password: "123456", imageName: "nicolasgodoy")
+        let u5: User = User(id: 5, name: "Nicolas Godoy", age: 21, email: "nicolasgodoy@email.com", password: "123456", imageName: "nicolasgodoy")
         
         // presentations
         
-        var p1: Presentation = Presentation(id: 1, title: "Unexpected places: Figma as a space for anything and everything", description: "Creating something from a blank file is magic. Ace wants to empower and excite people to use Figma for anything and everything by looking through five vignettes: five (Community) files, five practiced skills, five sets of challenges. Each story examines unique processes, constraints, goals, and lessons.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow")
+        var p1: Presentation = Presentation(id: 1, title: "Unexpected places: Figma as a space for anything and everything", description: "Creating something from a blank file is magic. Ace wants to empower and excite people to use Figma for anything and everything by looking through five vignettes: five (Community) files, five practiced skills, five sets of challenges. Each story examines unique processes, constraints, goals, and lessons.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow", isMain: true)
         
-        var p2: Presentation = Presentation(id: 2, title: "#FigmaandChill, a catalyst to connection, community, & culture", description: "In this talk we will share how BIPOC designers from around the world are leveraging emerging technologies to explore design through play, create dope art, and connect the global design community.", date: Date(), speakers: [], tag: Presentation.Tag.embracingTheMess, bannerName: "green")
+        var p2: Presentation = Presentation(id: 2, title: "#FigmaandChill, a catalyst to connection, community, & culture", description: "In this talk we will share how BIPOC designers from around the world are leveraging emerging technologies to explore design through play, create dope art, and connect the global design community.", date: Date(), speakers: [], tag: Presentation.Tag.embracingTheMess, bannerName: "green", isMain: false)
         
-        var p3: Presentation = Presentation(id: 3, title: "Building Sticker Sheets to scale design systems", description: "AThe aim of this talk is to demystify the process behind creating and organizing a design system from scratch, using our experience as product consultants for large companies.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow")
+        var p3: Presentation = Presentation(id: 3, title: "Building Sticker Sheets to scale design systems", description: "AThe aim of this talk is to demystify the process behind creating and organizing a design system from scratch, using our experience as product consultants for large companies.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow", isMain: false)
         
-        var p4: Presentation = Presentation(id: 4, title: "Auditing design systems for accessibility", description: "In this session, learn how to audit components for accessibility issues from design to code using plugins, best practices, and testing tools. Walk away from this session empowered to make your design systems accessible sooner.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow")
+        var p4: Presentation = Presentation(id: 4, title: "Auditing design systems for accessibility", description: "In this session, learn how to audit components for accessibility issues from design to code using plugins, best practices, and testing tools. Walk away from this session empowered to make your design systems accessible sooner.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow", isMain: false)
         
-        var p5: Presentation = Presentation(id: 5, title: "From relay to road trip: eliminating ego and fostering cross-discipline collaboration", description: "What if we viewed projects less as a baton pass between disciplines and more like a team road trip? The concept of road tripping envisions collaborators riding along together, switching drivers as the project progresses. While one discipline drives, the passengers stay engaged to support and contribute ideas. After all, what is a road trip without a trusty co-pilot to D.J., open snacks and help navigate along the journey?", date: Date(), speakers: [], tag: Presentation.Tag.shifting, bannerName: "purple")
+        var p5: Presentation = Presentation(id: 5, title: "From relay to road trip: eliminating ego and fostering cross-discipline collaboration", description: "What if we viewed projects less as a baton pass between disciplines and more like a team road trip? The concept of road tripping envisions collaborators riding along together, switching drivers as the project progresses. While one discipline drives, the passengers stay engaged to support and contribute ideas. After all, what is a road trip without a trusty co-pilot to D.J., open snacks and help navigate along the journey?", date: Date(), speakers: [], tag: Presentation.Tag.shifting, bannerName: "purple", isMain: false)
         
         
         // speakers
@@ -59,18 +61,6 @@ struct DataFile {
         usersData.append(u4)
         usersData.append(u5)
         
-        presentationsData.append(p1)
-        presentationsData.append(p2)
-        presentationsData.append(p3)
-        presentationsData.append(p4)
-        presentationsData.append(p5)
-        
-        speakersData.append(s1)
-        speakersData.append(s2)
-        speakersData.append(s3)
-        speakersData.append(s4)
-        speakersData.append(s5)
-        
         s1.presentations.append(p1)
         s2.presentations.append(p5)
         s3.presentations.append(p2)
@@ -83,6 +73,17 @@ struct DataFile {
         p3.speakers.append(s4)
         p4.speakers.append(s5)
         
+        presentationsData.append(p1)
+        presentationsData.append(p2)
+        presentationsData.append(p3)
+        presentationsData.append(p4)
+        presentationsData.append(p5)
+        
+        speakersData.append(s1)
+        speakersData.append(s2)
+        speakersData.append(s3)
+        speakersData.append(s4)
+        speakersData.append(s5)
         
     }
 }

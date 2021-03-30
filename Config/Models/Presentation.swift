@@ -26,4 +26,5 @@ struct Presentation: Identifiable {
     var banner: Image {
         Image(bannerName)
     }
+    var isMain: Bool
 }
