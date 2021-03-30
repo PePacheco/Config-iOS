@@ -16,6 +16,8 @@
 		6DB1C25B261251A800077619 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1C25A261251A800077619 /* User.swift */; };
 		71F616882612CCF40080015F /* SpeakerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F616872612CCF40080015F /* SpeakerItem.swift */; };
 		71F6168D2612D2290080015F /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6168C2612D2290080015F /* CircleImage.swift */; };
+		71F616962612D91A0080015F /* Roboto_Mono in Resources */ = {isa = PBXBuildFile; fileRef = 71F616952612D91A0080015F /* Roboto_Mono */; };
+		71F6169B2612DADE0080015F /* Inter in Resources */ = {isa = PBXBuildFile; fileRef = 71F6169A2612DADE0080015F /* Inter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6DB1C25A261251A800077619 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		71F616872612CCF40080015F /* SpeakerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerItem.swift; sourceTree = "<group>"; };
 		71F6168C2612D2290080015F /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		71F616952612D91A0080015F /* Roboto_Mono */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Roboto_Mono; sourceTree = "<group>"; };
+		71F6169A2612DADE0080015F /* Inter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Inter; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +108,19 @@
 		6D1BDA402612506800C44C6C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				71F6168F2612D6980080015F /* Fonts */,
 				6D1BDA3126124F3700C44C6C /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		71F6168F2612D6980080015F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				71F6169A2612DADE0080015F /* Inter */,
+				71F616952612D91A0080015F /* Roboto_Mono */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D1BDA3526124F3700C44C6C /* Preview Assets.xcassets in Resources */,
+				71F616962612D91A0080015F /* Roboto_Mono in Resources */,
 				6D1BDA3226124F3700C44C6C /* Assets.xcassets in Resources */,
+				71F6169B2612DADE0080015F /* Inter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

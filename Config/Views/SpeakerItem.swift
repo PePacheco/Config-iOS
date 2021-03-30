@@ -18,11 +18,14 @@ struct SpeakerItem: View {
         self.image = speaker.image
     }
     var body: some View {
-        HStack {
+        HStack(alignment: .center) {
             CircleImage(image: image)
             VStack(alignment: .leading) {
                 Text(name)
+                    .font(Font.custom("RobotoMono-Bold", size: 25))
+                    .bold()
                 Text(role)
+                    .font(Font.custom("Inter-Light", size: 20))
             }
         }
     }
@@ -30,6 +33,6 @@ struct SpeakerItem: View {
 
 struct SpeakerItem_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakerItem(Speaker(id: 1, name: "Jose Tapioca", description: "IDK", role: "CDO", imageName: "jose-tapioca", links: nil, presentations: nil))
+        SpeakerItem(Speaker(id: 1, name: "Jose Tapioca", description: "IDK", role: "Chief Design Office", imageName: "jose-tapioca", links: nil, presentations: nil))
     }
 }
