@@ -13,8 +13,9 @@ struct Speaker: Identifiable {
     var description: String
     var role: String
     var imageName: String
-    var links: [String: String]
-    var presentations: [Presentation]
+    //MARK: --DEV ONLY, REMOVE THIS OPTIONALS LATER!!!
+    var links: [String: String]?
+    var presentations: [Presentation]?
     
     var image: Image {
         Image(imageName)
