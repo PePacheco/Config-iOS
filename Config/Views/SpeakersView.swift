@@ -9,26 +9,23 @@ import SwiftUI
 
 struct SpeakersView: View {
     var body: some View {
-        NavigationView {
-            ScrollView {
-                ForEach (DataFile.shared.speakersData) { speaker in
-                    VStack(alignment: .leading, spacing: nil) {
-                        SpeakerItem(speaker: speaker)
-                        Divider()
-                            .padding(.vertical, 15)
-                    }
-                    .padding(.horizontal)
+        ScrollView {
+            ForEach (DataFile.shared.speakersData) { speaker in
+                VStack(alignment: .leading, spacing: nil) {
+                    SpeakerItem(speaker: speaker)
+                    Divider()
+                        .padding(.vertical, 15)
                 }
-                ForEach (DataFile.shared.speakersData) { speaker in
-                    VStack(alignment: .leading, spacing: nil) {
-                        SpeakerItem(speaker: speaker)
-                        Divider()
-                            .padding(.vertical, 15)
-                    }
-                    .padding(.horizontal)
-                }
+                .padding(.horizontal)
             }
-            .navigationTitle("Speakers")
+            ForEach (DataFile.shared.speakersData) { speaker in
+                VStack(alignment: .leading, spacing: nil) {
+                    SpeakerItem(speaker: speaker)
+                    Divider()
+                        .padding(.vertical, 15)
+                }
+                .padding(.horizontal)
+            }
         }
     }
 }
