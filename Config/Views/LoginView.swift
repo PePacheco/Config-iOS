@@ -15,48 +15,51 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                
-                Text("Let's be bezier friends.")
-                    .font(Font.custom("Inter-Bold", size: 25))
-                
-                Image("Logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 150, alignment: .center)
-                Spacer()
-            }
-            .offset(y:100)
-            .fixedSize()
+            Text("Let's be bezier friends.")
+                .font(Font.custom("Inter-Bold", size: 25))
+                .padding(.top, 10)
+                .foregroundColor(.black)
+            
+            Image("Logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 150, alignment: .center)
+            
+            Spacer()
             
             VStack {
                 VStack (alignment: .leading) {
                     HStack {
                         Image(systemName: "envelope")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Email")
                             .foregroundColor(.gray)
+                            .font(.body)
                     }
                     VStack {
                         TextField("example@icloud.com", text: $username)
                             .foregroundColor(Color.black)
+                            .font(.body)
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
                     }
-                    
                     .padding(.bottom, 25)
                     
                     HStack {
                         Image(systemName: "lock")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Password")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     VStack {
                         TextField("*************", text: $password)
                             .foregroundColor(Color.black)
+                            .font(.body)
                         
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
@@ -64,15 +67,15 @@ struct LoginView: View {
                         
                         Text("Show")
                             .foregroundColor(.blue)
-                            .offset(x: 120, y: -40)
+                            .font(.body)
+                            .offset(x: 130, y: -38)
                     }
                     
                     Spacer()
                     
                 }
                 .padding(.horizontal, 50)
-                .offset(y:140)
-                .padding(.vertical)
+                .padding(.top, 100)
                 
                 VStack {
                     
@@ -103,10 +106,9 @@ struct LoginView: View {
                         SignInView()
                     })
                 }
-                .offset(y: 65)
+                .padding(.bottom, 20)
             }
         }
-        .offset(y: -80)
     }
 }
 

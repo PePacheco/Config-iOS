@@ -41,8 +41,7 @@ struct SignInView: View {
             VStack {
                 
                 VStack(alignment: .leading) {
-                
-                    
+
                     HStack {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
@@ -69,7 +68,7 @@ struct SignInView: View {
                     
                     VStack {
                         DatePicker("", selection: $selectedDate, displayedComponents: .date)
-                    }.offset(x: -170)
+                    }
             
                     
                     HStack {
@@ -87,8 +86,6 @@ struct SignInView: View {
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
                     }
-                    
-                    
                     
                     HStack {
                         Image(systemName: "lock")
@@ -108,13 +105,11 @@ struct SignInView: View {
                         
                         Text("Show")
                             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                            .offset(x: 120, y: -40)
                     }
                     
                     
                 }.padding(.horizontal, 50)
                 .padding(.vertical)
-                //.offset(y: 20)
                 
                 VStack {
                     
@@ -137,10 +132,9 @@ struct SignInView: View {
                         LoginView()
                     })
 
-                }.offset(y: 65)
+                }
             }
         }
-        .offset(y: -80)
     }
 }
 

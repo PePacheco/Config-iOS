@@ -27,11 +27,11 @@ struct Onboarding2View: View {
                 VStack {
                     Image("WelcomeStamp")
                         .resizable()
-                        .frame(width: 316.03, height: 278, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .frame(width: 316.03, height: 278, alignment: .center)
                 }
                 .padding(.bottom,120)
                 
-                VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
+                VStack(alignment: .center) {
                     Text("and get ready for ")
                     Text("the event!")
                         .padding(.bottom, 60)
