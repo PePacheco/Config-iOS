@@ -50,5 +50,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RobotoMono-Bold.ttf</string>
+		<string>Inter-Regular.ttf</string>
+	</array>
 </dict>
 </plist>

@@ -9,17 +9,26 @@ import SwiftUI
 
 struct SearchBar: View {
     var body: some View {
-        HStack(alignment: .center) {
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.black)
-            Text("Search")
-                .foregroundColor(.black)
-            Spacer()
+        VStack (spacing: 10){
+            HStack(alignment: .center) {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.black)
+                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                Text("Search")
+                    .foregroundColor(.black)
+                Spacer()
+            }
+                .frame(width: 385, height: 50)
+                .background(Color(UIColor.lightGray))
+                .opacity(0.5)
+                .cornerRadius(8)
+            
+            HStack(spacing: 14) {
+                Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
+                Filter(color: UIColor.purple, title: "Shifting the culture", width: 130)
+                Filter(color: UIColor.yellow, title: "In the file", width: 80)
+            }
         }
-        .frame(width: 385, height: 50)
-        .background(Color(UIColor.lightGray))
-        .opacity(0.5)
-        .cornerRadius(8)
     }
 }
 
