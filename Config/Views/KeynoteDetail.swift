@@ -17,6 +17,7 @@ struct KeynoteDetail: View {
                 SearchBar()
                 
                 Image("banner_amarelo")
+                //Image(presentation.banner)
                     .resizable()
                     .frame(maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .padding(.top)
@@ -39,6 +40,7 @@ struct KeynoteDetail: View {
                     .padding(.bottom, 20)
                 
                 Filter(color: UIColor.yellow, title: "In the file", width: 80)
+                    .padding(.leading, 10)
                 
                 Divider()
                 
