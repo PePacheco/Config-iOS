@@ -17,23 +17,17 @@ struct LoginView: View {
             
             VStack {
                 
-                VStack () {
-                    
+                VStack {
                     
                     Text("Let's be bezier friends.")
                         .font(Font.custom("Inter-Bold", size: 25))
-                        //.offset(y: -80)
-                    
                     
                     Image("Logo")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 200, height: 200, alignment: .center)
-                        //.offset(y: -80)
+                        .frame(width: 200, height: 150, alignment: .center)
                     Spacer()
                 }.fixedSize()
-                //.background(Color.red)
-                
                 
                 VStack {
                     VStack (alignment: .leading){
@@ -64,14 +58,19 @@ struct LoginView: View {
                         VStack {
                             TextField("*************", text: $password)
                                 .foregroundColor(Color.black)
+                            
                             Rectangle()
                                 .frame(height: 1.0, alignment: .bottom)
                                 .foregroundColor(Color.gray)
+                            
+                            Text("Show")
+                                .foregroundColor(.blue)
+                                .offset(x: 120, y: -40)
                         }
                         
                         Spacer()
                         
-                    }.padding(.horizontal, 50)
+                    }.padding(.horizontal, 50).offset(y:60)
                     .padding(.vertical)
                     
                     VStack {
