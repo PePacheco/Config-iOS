@@ -12,29 +12,22 @@ struct LoginView: View {
     @State private var password = "******************"
     
     var body: some View {
-        
         NavigationView {
-            
             VStack {
-                
                 VStack () {
-                    
-                    
                     Text("Let's be bezier friends.")
                         .font(Font.custom("Inter-Bold", size: 25))
-                        //.offset(y: -80)
+                    //.offset(y: -80)
                     
                     
                     Image("Logo")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200, height: 200, alignment: .center)
-                        //.offset(y: -80)
+                    //.offset(y: -80)
                     Spacer()
                 }.fixedSize()
                 //.background(Color.red)
-                
-                
                 VStack {
                     VStack (alignment: .leading){
                         HStack {
@@ -42,7 +35,6 @@ struct LoginView: View {
                                 .foregroundColor(.gray)
                             Text("Email")
                                 .foregroundColor(.gray)
-                            
                         }
                         VStack {
                             TextField("example@icloud.com", text: $username)
@@ -94,14 +86,12 @@ struct LoginView: View {
                 }
             }
             .offset(y: -80)
-            
         }
         .foregroundColor(.black)
     }
-    
-    struct LoginView_Previews: PreviewProvider {
-        static var previews: some View {
-            LoginView()
-        }
+}
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
     }
 }
