@@ -74,8 +74,7 @@ struct LoginView: View {
                     .padding(.vertical)
                     
                     VStack {
-                        
-                        NavigationLink(destination: ScheduleView()) {
+                        NavigationLink(destination: TabBarView()) {
                             Text("Login")
                                 .frame(minWidth: 0, maxWidth: 250)
                                 .padding()
@@ -94,7 +93,9 @@ struct LoginView: View {
                 }
             }
             .offset(y: -80)
+            
         }
+        .foregroundColor(.black)
     }
     
     struct LoginView_Previews: PreviewProvider {
