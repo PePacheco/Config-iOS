@@ -38,11 +38,16 @@ struct KeynoteDetail: View {
                 Divider()
                 
                 Text("Speakers")
-                    .padding(.top, 10)
+                    .padding(.leading, 10)
                     .font(.title)
                 
-                SpeakerItem(speaker: speaker)
-                
+                NavigationLink(
+                    destination: SpeakersView(),
+                    label: {
+                        SpeakerItem(speaker: speaker)
+                            .padding(10)
+                            .foregroundColor(.black)
+                    })
             }
         }
         .padding(10)
