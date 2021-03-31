@@ -29,6 +29,6 @@ struct ScheduleView: View {
 
 struct Schedule_Previews: PreviewProvider {
     static var previews: some View {
-        Schedule()
+        ScheduleView()
     }
 }
