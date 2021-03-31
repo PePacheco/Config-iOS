@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @State var tab: Tabs = .schedule
+    
     enum Tabs: String {
         case schedule = "Schedule"
         case speakers = "Speakers"
         case account = "Account"
     }
+    
     var tabName: String {
         tab.rawValue
     }
-    @State var tab: Tabs = .schedule
+    
     var body: some View {
         TabView(selection: $tab) {
             ScheduleView()
