@@ -20,7 +20,9 @@ struct PresentationRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 20) {
                     ForEach(presentations) { presentation in
-                        PresentationCard(presentation: presentation)
+                        NavigationLink(destination: KeynoteDetail(presentation: presentation)) {
+                            PresentationCard(presentation: presentation)
+                        }
                     }
                 }
             }

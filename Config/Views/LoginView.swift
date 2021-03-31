@@ -76,7 +76,11 @@ struct LoginView: View {
                     
                     VStack {
                         
+<<<<<<< HEAD
                         NavigationLink(destination: ScheduleView()) {
+=======
+                        NavigationLink(destination: TabBarView()) {
+>>>>>>> 9b7d6bd04ddfae21531b882ccbafdad8cab85021
                             Text("Login")
                                 .frame(minWidth: 0, maxWidth: 250)
                                 .padding()
