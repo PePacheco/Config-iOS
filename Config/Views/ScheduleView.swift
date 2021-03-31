@@ -9,23 +9,6 @@ import SwiftUI
 
 struct ScheduleView: View {
     var body: some View {
-<<<<<<< HEAD
-        NavigationView {
-            List {
-                SearchBar()
-                Text("Wednesday, April 21st")
-                    .font(Font.custom("San-Francisco", size: 25.0))
-                    .fontWeight(.bold)
-                    .padding(.top, 20)
-                
-                PresentationRow(presentations: [DataFile.shared.presentationsData[0]], date: "1:00-1:40pm BRT")
-                PresentationRow(presentations: [DataFile.shared.presentationsData[1], DataFile.shared.presentationsData[2]], date: "1:50-2:20pm BRT")
-                PresentationRow(presentations: [DataFile.shared.presentationsData[4],DataFile.shared.presentationsData[3]], date: "2:30-3:00pm BRT")
-            }
-            .navigationTitle("Schedule")
-            .background(Color.blue)
-            .foregroundColor(.black)
-=======
         List {
             SearchBar()
             Text("Wednesday, April 21st")
@@ -36,7 +19,6 @@ struct ScheduleView: View {
             PresentationRow(presentations: [DataFile.shared.presentationsData[0]], date: "1:00-1:40pm BRT")
             PresentationRow(presentations: [DataFile.shared.presentationsData[1], DataFile.shared.presentationsData[2]], date: "1:50-2:20pm BRT")
             PresentationRow(presentations: [DataFile.shared.presentationsData[4],DataFile.shared.presentationsData[3]], date: "2:30-3:00pm BRT")
->>>>>>> f90e5cab5d90a055fc07f457d5e94a0985bcefb6
         }
     }
 }
