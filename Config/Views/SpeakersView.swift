@@ -11,9 +11,17 @@ struct SpeakersView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                ForEach (0..<10) { id in
+                ForEach (DataFile.shared.speakersData) { speaker in
                     VStack(alignment: .leading, spacing: nil) {
-                        SpeakerItem(speaker: DataFile.shared.speakersData[0])
+                        SpeakerItem(speaker: speaker)
+                        Divider()
+                            .padding(.vertical, 15)
+                    }
+                    .padding(.horizontal)
+                }
+                ForEach (DataFile.shared.speakersData) { speaker in
+                    VStack(alignment: .leading, spacing: nil) {
+                        SpeakerItem(speaker: speaker)
                         Divider()
                             .padding(.vertical, 15)
                     }
