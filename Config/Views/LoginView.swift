@@ -76,7 +76,7 @@ struct LoginView: View {
                     
                     VStack {
                         
-                        NavigationLink(destination: Schedule()) {
+                        NavigationLink(destination: ScheduleView()) {
                             Text("Login")
                                 .frame(minWidth: 0, maxWidth: 250)
                                 .padding()
