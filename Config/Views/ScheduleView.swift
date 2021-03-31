@@ -1,5 +1,5 @@
 //
-//  Schedule.swift
+//  ScheduleView.swift
 //  Config
 //
 //  Created by Pedro Gomes Rubbo Pacheco on 29/03/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Schedule: View {
+struct ScheduleView: View {
     var body: some View {
         NavigationView {
             List {
