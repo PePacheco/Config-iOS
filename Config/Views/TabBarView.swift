@@ -16,11 +16,12 @@ struct TabBarView: View {
                     Text("Schedule")
                 }
             
-            Text("Speakers")
+            SpeakersView()
                 .tabItem {
                     Image(systemName: "person.3")
                     Text("Speakers")
                 }
+            
             Text("Account")
                 .tabItem {
                     Image(systemName: "person")

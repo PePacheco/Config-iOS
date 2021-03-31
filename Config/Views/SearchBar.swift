@@ -12,16 +12,22 @@ struct SearchBar: View {
         VStack (spacing: 10){
             HStack(alignment: .center) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundColor(.black)
-                    .padding(.leading, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(Color(UIColor.black))
+                    .padding(.leading, 10)
+                
                 Text("Search")
                     .foregroundColor(.black)
+                
                 Spacer()
+                
+                Image(systemName: "mic.fill")
+                    .foregroundColor(Color(UIColor.black))
+                    .padding(.trailing, 10)
             }
-                .frame(width: 385, height: 50)
+                .frame(width: 385, height: 40)
                 .background(Color(UIColor.lightGray))
                 .opacity(0.5)
-                .cornerRadius(8)
+                .cornerRadius(15)
             
             HStack(spacing: 14) {
                 Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
