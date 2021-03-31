@@ -55,6 +55,8 @@
 		7148302D2614267700098292 /* SpeakerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302C2614267700098292 /* SpeakerItem.swift */; };
 		714830302614268200098292 /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302F2614268200098292 /* SpeakersView.swift */; };
 		71483033261426AC00098292 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71483032261426AC00098292 /* CircleImage.swift */; };
+		71B521722614FC2D00D42088 /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B521712614FC2D00D42088 /* SpeakerDetails.swift */; };
+		71B521752615031B00D42088 /* SpeakerDetailPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B521742615031B00D42088 /* SpeakerDetailPresentationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +114,8 @@
 		7148302C2614267700098292 /* SpeakerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerItem.swift; sourceTree = "<group>"; };
 		7148302F2614268200098292 /* SpeakersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
 		71483032261426AC00098292 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		71B521712614FC2D00D42088 /* SpeakerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
+		71B521742615031B00D42088 /* SpeakerDetailPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerDetailPresentationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 				7148302F2614268200098292 /* SpeakersView.swift */,
 				7148302C2614267700098292 /* SpeakerItem.swift */,
 				714830292614266F00098292 /* SpeakerItemInternal.swift */,
+				71B521712614FC2D00D42088 /* SpeakerDetails.swift */,
+				71B521742615031B00D42088 /* SpeakerDetailPresentationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B521722614FC2D00D42088 /* SpeakerDetails.swift in Sources */,
 				7148302D2614267700098292 /* SpeakerItem.swift in Sources */,
 				6D1BDA3026124F3600C44C6C /* ContentView.swift in Sources */,
 				6D1BDA2E26124F3600C44C6C /* ConfigApp.swift in Sources */,
@@ -370,6 +377,7 @@
 				6DAC5BB82612560A00A5121A /* Speaker.swift in Sources */,
 				6D30B9542613A717005287BA /* ScheduleView.swift in Sources */,
 				5D7DAAC52614E2A2006886F4 /* KeynoteDetail.swift in Sources */,
+				71B521752615031B00D42088 /* SpeakerDetailPresentationView.swift in Sources */,
 				4EF4EB9A2613B32B00E9C5BA /* LoginView.swift in Sources */,
 				4EF4EBA42613C11D00E9C5BA /* SignInView.swift in Sources */,
 				6DF0A2E52614926300F39E12 /* Filter.swift in Sources */,
