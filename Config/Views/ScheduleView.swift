@@ -11,6 +11,13 @@ struct ScheduleView: View {
     var body: some View {
         List {
             SearchBar()
+            
+            HStack(spacing: 14) {
+                Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
+                Filter(color: UIColor.purple, title: "Shifting the culture", width: 130)
+                Filter(color: UIColor.yellow, title: "In the file", width: 80)
+            }
+            
             Text("Wednesday, April 21st")
                 .font(Font.custom("San-Francisco", size: 25.0))
                 .fontWeight(.bold)

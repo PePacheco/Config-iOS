@@ -16,7 +16,10 @@ struct KeynoteDetail: View {
             VStack(alignment: .leading) {
                 SearchBar()
                 
-                Spacer()
+                Image("banner_amarelo")
+                    .resizable()
+                    .frame(maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .padding(.top)
                 
                 Text(presentation.title)
                     .font(Font.custom("RobotoMono-Bold", size: 20))
@@ -34,6 +37,8 @@ struct KeynoteDetail: View {
                     //.multilineTextAlignment(.center)
                     .padding(.top, 20)
                     .padding(.bottom, 20)
+                
+                Filter(color: UIColor.yellow, title: "In the file", width: 80)
                 
                 Divider()
                 

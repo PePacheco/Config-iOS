@@ -28,12 +28,6 @@ struct SearchBar: View {
                 .background(Color(UIColor.lightGray))
                 .opacity(0.5)
                 .cornerRadius(15)
-            
-            HStack(spacing: 14) {
-                Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
-                Filter(color: UIColor.purple, title: "Shifting the culture", width: 130)
-                Filter(color: UIColor.yellow, title: "In the file", width: 80)
-            }
         }
     }
 }
