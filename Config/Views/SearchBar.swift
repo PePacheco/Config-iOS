@@ -22,34 +22,9 @@ struct SearchBar: View {
             .opacity(0.5)
             .cornerRadius(8)
             HStack(spacing: 14) {
-                HStack(alignment: .center) {
-                    Text("Embracing the mess")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                }
-                .frame(width: 130, height: 30)
-                .background(Color(UIColor.green))
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                .cornerRadius(16)
-                    
-                HStack(alignment: .center) {
-                    Text("Shifting the culture")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                }
-                .frame(width: 130, height: 30)
-                .background(Color(UIColor.purple))
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                .cornerRadius(16)
-                HStack(alignment: .center) {
-                    Text("In the file")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                }
-                .frame(width: 100, height: 30)
-                .background(Color(UIColor.yellow))
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 3)
-                .cornerRadius(16)
+                Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
+                Filter(color: UIColor.purple, title: "Shifting the culture", width: 130)
+                Filter(color: UIColor.yellow, title: "In the file", width: 80)
             }
         }
     }
