@@ -94,7 +94,9 @@ struct LoginView: View {
                 }
             }
             .offset(y: -80)
+            
         }
+        .foregroundColor(.black)
     }
     
     struct LoginView_Previews: PreviewProvider {
