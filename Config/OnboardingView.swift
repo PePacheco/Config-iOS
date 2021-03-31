@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Onboarding: View {
+    
     var body: some View {
         
         ZStack{
@@ -40,7 +41,9 @@ struct Onboarding: View {
             }
             .font(Font.custom("Inter-Medium", size:24))
             .foregroundColor(.white)
+            .padding(.bottom, 121)
         }
+        
 
     }
     
@@ -50,3 +53,4 @@ struct Onboarding: View {
         }
     }
 }
+
