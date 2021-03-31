@@ -21,28 +21,31 @@ struct TabBarView: View {
     }
     
     var body: some View {
-        TabView(selection: $tab) {
-            ScheduleView()
-                .tabItem {
-                    Image(systemName: "calendar")
-                    Text("Schedule")
-                }
-                .tag(Tabs.schedule)
-            
-            SpeakersView()
-                .tabItem {
-                    Image(systemName: "person.3")
-                    Text("Speakers")
-                }
-                .tag(Tabs.speakers)
-            Text("Account")
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
-                }
-                .tag(Tabs.account)
+        NavigationView {
+            TabView(selection: $tab) {
+                ScheduleView()
+                    .tabItem {
+                        Image(systemName: "calendar")
+                        Text("Schedule")
+                    }
+                    .tag(Tabs.schedule)
+                
+                SpeakersView()
+                    .tabItem {
+                        Image(systemName: "person.3")
+                        Text("Speakers")
+                    }
+                    .tag(Tabs.speakers)
+                Text("Account")
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Account")
+                    }
+                    .tag(Tabs.account)
+            }
+            .navigationTitle(tabName)
         }
-        .navigationTitle(tabName)
+        .foregroundColor(.black)
     }
 }
 
