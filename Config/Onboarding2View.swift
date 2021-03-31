@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct Onboarding2: View {
+struct Onboarding2View: View {
     var body: some View {
         
         ZStack{
             Color.init(red: 0.627, green: 0.424, blue: 0.965)
-            .ignoresSafeArea()
-
+                .ignoresSafeArea()
+            
             Image("background2")
                 .resizable()
                 .frame(width: UIScreen.main.bounds.width)
@@ -23,29 +23,41 @@ struct Onboarding2: View {
                 Text("Explore, keynotes, speakers, agenda...")
                     .font(Font.custom("Inter-Bold", size: 32))
                     .padding(.bottom, 87)
-
+                
                 VStack {
                     Image("WelcomeStamp")
                         .resizable()
                         .frame(width: 316.03, height: 278, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 }
                 .padding(.bottom,120)
-
+                
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/) {
-                    Text("and get ready")
-                    Text("for the event!")
+                    Text("and get ready for ")
+                    Text("the event!")
+                        .padding(.bottom, 60)
+                }
+                
+                Button(action: {
+                    // What to perform
+                }) {
+                    Text("Let's go!")
+                        .font(Font.custom("Inter-Bold", size: 20))
+                        .padding(.horizontal,115)
+                        .padding(.vertical, 14)
+                        .background(Color.black)
+                        .cornerRadius(4)
+                        .foregroundColor(.white)
+                    
                 }
             }
             .font(Font.custom("Inter-Medium", size:24))
             .foregroundColor(.white)
-            .padding(.bottom,79)
         }
-
     }
     
     struct Onboarding2_Previews: PreviewProvider {
         static var previews: some View {
-            Onboarding2()
+            Onboarding2View()
         }
     }
 }
