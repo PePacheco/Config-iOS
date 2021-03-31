@@ -173,23 +173,11 @@
 		6D1BDA3E2612505E00C44C6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71483032261426AC00098292 /* CircleImage.swift */,
-				6D1BDA2F26124F3600C44C6C /* ContentView.swift */,
-				6DFCBB6D2613A6E80036A995 /* PresentationCard.swift */,
-				6DFCBB702613A6F40036A995 /* PresentationRow.swift */,
-				6DF0A2E42614926300F39E12 /* Filter.swift */,
-				6D30B9532613A717005287BA /* ScheduleView.swift */,
-				5D7DAAC42614E2A2006886F4 /* KeynoteDetail.swift */,
-				5D7DAAC72614E2C0006886F4 /* TabBarView.swift */,
-				4EF4EB992613B32B00E9C5BA /* LoginView.swift */,
-				4EF4EBA32613C11D00E9C5BA /* SignInView.swift */,
-				6DFCBB6A2613A6D00036A995 /* SearchBar.swift */,
-				7148302F2614268200098292 /* SpeakersView.swift */,
-				7148302C2614267700098292 /* SpeakerItem.swift */,
-				714830292614266F00098292 /* SpeakerItemInternal.swift */,
-				6D9C16F62614FFDF00E9A9E1 /* OnboardingView.swift */,
-				6D9C16FA2615001400E9A9E1 /* OnboardingPage.swift */,
-				6D9C16FD2615003000E9A9E1 /* Onboarding2View.swift */,
+				6DD5BCC2261515C2006E840F /* MainViews */,
+				6DD5BCC1261515A9006E840F /* Presentation */,
+				6DD5BCC02615159C006E840F /* Other */,
+				6DD5BCBF2615158C006E840F /* Onboarding */,
+				6DD5BCBE26151580006E840F /* Speaker */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +201,58 @@
 				4EF4EB94261264FE00E9C5BA /* DataFile.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DD5BCBE26151580006E840F /* Speaker */ = {
+			isa = PBXGroup;
+			children = (
+				714830292614266F00098292 /* SpeakerItemInternal.swift */,
+				7148302C2614267700098292 /* SpeakerItem.swift */,
+				7148302F2614268200098292 /* SpeakersView.swift */,
+			);
+			path = Speaker;
+			sourceTree = "<group>";
+		};
+		6DD5BCBF2615158C006E840F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				6D9C16FD2615003000E9A9E1 /* Onboarding2View.swift */,
+				6D9C16FA2615001400E9A9E1 /* OnboardingPage.swift */,
+				6D9C16F62614FFDF00E9A9E1 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		6DD5BCC02615159C006E840F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				5D7DAAC42614E2A2006886F4 /* KeynoteDetail.swift */,
+				6DFCBB6A2613A6D00036A995 /* SearchBar.swift */,
+				6DF0A2E42614926300F39E12 /* Filter.swift */,
+				71483032261426AC00098292 /* CircleImage.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		6DD5BCC1261515A9006E840F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6DFCBB702613A6F40036A995 /* PresentationRow.swift */,
+				6DFCBB6D2613A6E80036A995 /* PresentationCard.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6DD5BCC2261515C2006E840F /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D7DAAC72614E2C0006886F4 /* TabBarView.swift */,
+				4EF4EB992613B32B00E9C5BA /* LoginView.swift */,
+				6D1BDA2F26124F3600C44C6C /* ContentView.swift */,
+				6D30B9532613A717005287BA /* ScheduleView.swift */,
+				4EF4EBA32613C11D00E9C5BA /* SignInView.swift */,
+			);
+			path = MainViews;
 			sourceTree = "<group>";
 		};
 		6DFCBB612613A67F0036A995 /* Helpers */ = {

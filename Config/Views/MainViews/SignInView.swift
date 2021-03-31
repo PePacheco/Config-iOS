@@ -26,7 +26,7 @@ struct SignInView: View {
                 Image("matheushomrich")
                     .resizable()
                     .scaledToFit()
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .clipShape(Circle())
                     .overlay(Circle().stroke(Color.black, lineWidth: 4))
                     .frame(width: 200, height: 165, alignment: .center)
                 
@@ -46,9 +46,7 @@ struct SignInView: View {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
                         Text("Name")
-                            .foregroundColor(.gray)
-                        
-                    }
+                            .foregroundColor(.gray)                    }
                     
                     VStack {
                         TextField("Matheus Homrich", text: $name)
