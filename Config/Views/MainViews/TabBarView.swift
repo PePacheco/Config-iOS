@@ -44,6 +44,7 @@ struct TabBarView: View {
                     .tag(Tabs.account)
             }
             .tabViewStyle(DefaultTabViewStyle())
+            .accentColor(.purple)
             .navigationTitle(tabName)
         }
         .foregroundColor(.black)
