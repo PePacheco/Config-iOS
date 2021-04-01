@@ -58,6 +58,8 @@
 		7148302D2614267700098292 /* SpeakerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302C2614267700098292 /* SpeakerItem.swift */; };
 		714830302614268200098292 /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302F2614268200098292 /* SpeakersView.swift */; };
 		71483033261426AC00098292 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71483032261426AC00098292 /* CircleImage.swift */; };
+		71DD05872616302D001BCE6A /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD05852616302D001BCE6A /* SpeakerDetails.swift */; };
+		71DD05882616302D001BCE6A /* SpeakerDetailPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD05862616302D001BCE6A /* SpeakerDetailPresentationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,8 @@
 		7148302C2614267700098292 /* SpeakerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerItem.swift; sourceTree = "<group>"; };
 		7148302F2614268200098292 /* SpeakersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
 		71483032261426AC00098292 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		71DD05852616302D001BCE6A /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
+		71DD05862616302D001BCE6A /* SpeakerDetailPresentationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetailPresentationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,8 @@
 		6DD5BCBE26151580006E840F /* Speaker */ = {
 			isa = PBXGroup;
 			children = (
+				71DD05862616302D001BCE6A /* SpeakerDetailPresentationView.swift */,
+				71DD05852616302D001BCE6A /* SpeakerDetails.swift */,
 				714830292614266F00098292 /* SpeakerItemInternal.swift */,
 				7148302C2614267700098292 /* SpeakerItem.swift */,
 				7148302F2614268200098292 /* SpeakersView.swift */,
@@ -419,6 +425,7 @@
 				714830302614268200098292 /* SpeakersView.swift in Sources */,
 				6DB1C25B261251A800077619 /* User.swift in Sources */,
 				6DAC5BB82612560A00A5121A /* Speaker.swift in Sources */,
+				71DD05882616302D001BCE6A /* SpeakerDetailPresentationView.swift in Sources */,
 				6D30B9542613A717005287BA /* ScheduleView.swift in Sources */,
 				5D7DAAC52614E2A2006886F4 /* KeynoteDetail.swift in Sources */,
 				4EF4EB9A2613B32B00E9C5BA /* LoginView.swift in Sources */,
@@ -432,6 +439,7 @@
 				5D7DAAC82614E2C0006886F4 /* TabBarView.swift in Sources */,
 				71483033261426AC00098292 /* CircleImage.swift in Sources */,
 				4EF4EB95261264FE00E9C5BA /* DataFile.swift in Sources */,
+				71DD05872616302D001BCE6A /* SpeakerDetails.swift in Sources */,
 				6DFCBB632613A69A0036A995 /* FormatDate.swift in Sources */,
 				6D9C16FB2615001400E9A9E1 /* OnboardingPage.swift in Sources */,
 			);
