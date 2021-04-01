@@ -39,7 +39,7 @@ struct KeynoteDetail: View {
                     .padding(.top, 20)
                     .padding(.bottom, 20)
                 
-                Filter(color: UIColor.yellow, title: "In the file", width: 80)
+                switchColorsView(color: presentation.bannerName)
                     .padding(.leading, 10)
                 
                 Divider()
