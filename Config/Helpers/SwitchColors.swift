@@ -19,3 +19,16 @@ func switchColors(color:String) -> Color {
         return .black
     }
 }
+
+func switchColorsView(color:String) -> Filter {
+    switch color {
+    case "yellow":
+        return Filter(color: UIColor.yellow, title: "In the file", width: 80)
+    case "purple":
+        return Filter(color: UIColor.purple, title: "Shifting the culture", width: 130)
+    case "green":
+        return Filter(color: UIColor.green, title: "Embrassing the mess", width: 140)
+    default:
+        return Filter(color: UIColor.yellow, title: "In the file", width: 80)
+    }
+}
