@@ -18,7 +18,7 @@ struct SpeakerDetailPresentationView: View {
                 .font(Font.custom("RobotoMono-Bold", size: 20))
                 .kerning(-0.64)
                 .frame(width: 365, height: 48, alignment: .center)
-                .background(Color.blue)
+                .background(switchColors(color: presentation.bannerName))
                 .border(Color.black, width: 4)
                 //.offset(y: 0)
             VStack(alignment: .leading, spacing: 8) {
@@ -47,6 +47,6 @@ struct SpeakerDetailPresentationView: View {
 
 struct SpeakerDetailPresentationView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakerDetailPresentationView(presentation: DataFile.shared.presentationsData[0])
+        SpeakerDetailPresentationView(presentation: DataFile.shared.presentationsData[2])
     }
 }

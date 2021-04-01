@@ -41,6 +41,7 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Inter-SemiBold.ttf</string>
 		<string>Inter-Medium.ttf</string>
 		<string>RobotoMono-Bold.ttf</string>
 		<string>Inter-Regular.ttf</string>
