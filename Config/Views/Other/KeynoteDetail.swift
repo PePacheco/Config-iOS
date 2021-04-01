@@ -16,10 +16,10 @@ struct KeynoteDetail: View {
             VStack(alignment: .leading) {
                 SearchBar()
                 
-                Image("banner_amarelo")
+                Image(presentation.bannerName)
                 //Image(presentation.banner)
                     .resizable()
-                    .frame(maxHeight: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .frame(maxHeight: 50, alignment: .center)
                     .padding(.top)
                 
                 Text(presentation.title)

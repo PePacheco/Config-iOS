@@ -31,7 +31,7 @@ class DataFile {
         
         // presentations
         
-        var p1: Presentation = Presentation(id: 1, title: "Unexpected places: Figma as a space for anything and everything", description: "Creating something from a blank file is magic. Ace wants to empower and excite people to use Figma for anything and everything by looking through five vignettes: five (Community) files, five practiced skills, five sets of challenges. Each story examines unique processes, constraints, goals, and lessons.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "yellow", isMain: true)
+        var p1: Presentation = Presentation(id: 1, title: "Unexpected places: Figma as a space for anything and everything", description: "Creating something from a blank file is magic. Ace wants to empower and excite people to use Figma for anything and everything by looking through five vignettes: five (Community) files, five practiced skills, five sets of challenges. Each story examines unique processes, constraints, goals, and lessons.", date: Date(), speakers: [], tag: Presentation.Tag.inTheFile, bannerName: "black", isMain: true)
         
         var p2: Presentation = Presentation(id: 2, title: "#FigmaandChill, a catalyst to connection, community, & culture", description: "In this talk we will share how BIPOC designers from around the world are leveraging emerging technologies to explore design through play, create dope art, and connect the global design community.", date: Date(), speakers: [], tag: Presentation.Tag.embracingTheMess, bannerName: "green", isMain: false)
         
