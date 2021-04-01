@@ -13,6 +13,7 @@ struct SpeakerItem: View {
     var body: some View {
         ZStack (alignment: Alignment(horizontal: .leading, vertical: .center)){
             SpeakerItemInternal(speaker)
+                .padding(.trailing, 10)
             HStack {
                 Spacer()
                 Image(systemName: "chevron.right")

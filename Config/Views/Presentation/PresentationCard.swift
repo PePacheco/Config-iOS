@@ -27,9 +27,9 @@ struct NormalPresentation: View {
         HStack {
             VStack(alignment: .leading, spacing: 10) {
                 Text(presentation.title)
-                    .fontWeight(.bold)
+                    .font(.system(size: 18, weight: .bold))
                 Text(names)
-                    .font(.subheadline)
+                    .font(.system(size: 15, weight: .regular))
                     .foregroundColor(.gray)
                 Spacer()
             }
@@ -55,21 +55,22 @@ struct MainPresentation: View {
                     .overlay(Circle().stroke(Color.black, lineWidth: 4))
                     .shadow(radius: 7)
                 Text(presentation.speakers[0].name)
-                    .bold()
+                    .font(.system(size: 18, weight: .bold))
                 Text(presentation.speakers[0].role)
-                    .font(.subheadline)
+                    .font(.system(size: 15, weight: .regular))
+                    .foregroundColor(.gray)
             }
             .padding()
             .padding(.top, 20)
             
             VStack(alignment: .leading, spacing: 10) {
                 Text(presentation.title)
-                    .fontWeight(.bold)
+                    .font(.system(size: 20, weight: .bold))
                 Text(presentation.description)
-                    .font(.subheadline)
-                    .fontWeight(.light)
+                    .font(.system(size: 15, weight: .light))
             }
-            .padding()
+            .padding(.trailing)
+            .padding(.vertical)
             .padding(.top, 20)
         }
         .frame(width: 400, height: 200)
@@ -78,3 +79,8 @@ struct MainPresentation: View {
     }
 }
 
+struct PresentationCard_Previews: PreviewProvider {
+    static var previews: some View {
+        PresentationCard(presentation: DataFile.shared.presentationsData[1])
+    }
+}
