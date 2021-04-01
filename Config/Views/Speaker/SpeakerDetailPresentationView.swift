@@ -14,7 +14,7 @@ struct SpeakerDetailPresentationView: View {
         let names: String = presentation.speakers.reduce("", { $0 + $1.name + ", "})
         
         VStack {
-            Text(headerDate(date: presentation.date))
+            Text(presentation.date)
                 .font(Font.custom("RobotoMono-Bold", size: 20))
                 .kerning(-0.64)
                 .frame(width: 365, height: 48, alignment: .center)

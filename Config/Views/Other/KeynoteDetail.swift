@@ -29,7 +29,7 @@ struct KeynoteDetail: View {
                 
                 //Text("4/21 1:50-2:20pm BRT")
                 //me digam o que acham... o de antes esta comentado em cima
-                Text(headerDate(date: presentation.date))
+                Text(presentation.date)
                     .font(Font.custom("RobotoMono-Bold", size: 20))
                     .bold()
                     .padding(.top,20)

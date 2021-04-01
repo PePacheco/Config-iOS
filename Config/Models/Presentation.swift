@@ -18,7 +18,7 @@ struct Presentation: Identifiable {
     let id: Int
     var title: String
     var description: String
-    var date: Date
+    var date: String
     var speakers: [Speaker]
     var tag: Tag
     var bannerName: String
