@@ -50,6 +50,6 @@ struct SpeakerDetails: View {
 
 struct SpeakerDetails_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakerDetails(speaker: DataFile.shared.speakersData[1])
+        SpeakerDetails(speaker: DataFile.shared.speakersData[0])
     }
 }
