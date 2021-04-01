@@ -21,7 +21,9 @@ struct SpeakerDetails: View {
                     .multilineTextAlignment(.leading)
                     .font(Font.custom("Inter-Medium", size: 17))
                     .padding(.top, 24)
-                //TODO: Social links...
+                HStack {
+                    Text("")
+                }
                 Divider()
                 HStack {
                     Text("Keynotes")

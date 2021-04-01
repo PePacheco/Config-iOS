@@ -13,7 +13,7 @@ struct Speaker: Identifiable {
     var description: String
     var role: String
     var imageName: String
-    var links: [String: String]
+    var links: [(title: String, link: String)]
     var presentations: [Presentation]
     
     var image: Image {
