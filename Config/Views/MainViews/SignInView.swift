@@ -17,12 +17,13 @@ struct SignInView: View {
     @State private var isShowingSheetLogin = false
     
     var body: some View {
+        
         VStack {
             
-            VStack {
-                
                 Text("Let's be bezier friends.")
                     .font(Font.custom("Inter-Bold", size: 25))
+                    .padding(.top, 10)
+                    .foregroundColor(.black)
                 
                 Image("matheushomrich")
                     .resizable()
@@ -35,7 +36,7 @@ struct SignInView: View {
                     .font(.footnote)
                     .foregroundColor(.purple)
                 
-            }
+            
             VStack {
                 
                 VStack(alignment: .leading) {
@@ -43,14 +44,17 @@ struct SignInView: View {
                     HStack {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Name")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
                     VStack {
                         TextField("Matheus Homrich", text: $name)
                             .foregroundColor(Color.black)
+                            .font(.body)
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
@@ -59,8 +63,10 @@ struct SignInView: View {
                     HStack {
                         Image(systemName: "figure.stand")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Birthday")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
@@ -71,14 +77,17 @@ struct SignInView: View {
                     HStack {
                         Image(systemName: "envelope")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Email")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
                     VStack {
                         TextField("example@icloud.com", text: $username)
                             .foregroundColor(Color.black)
+                            .font(.body)
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
@@ -87,22 +96,27 @@ struct SignInView: View {
                     HStack {
                         Image(systemName: "lock")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Password")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
                     VStack {
                         TextField("*************", text: $password)
                             .foregroundColor(Color.black)
+                            .font(.body)
                         
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
+                            .font(.body)
                         
                         Text("Show")
                             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                             .offset(x:125, y:-38)
+                            .font(.body)
                     }
                     
                     Spacer()
