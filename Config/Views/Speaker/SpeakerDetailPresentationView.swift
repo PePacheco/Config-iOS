@@ -40,13 +40,6 @@ struct SpeakerDetailPresentationView: View {
     }
 }
 
-func headerDate(date: Date) -> String {
-    let dateFormatterPrint = DateFormatter()
-    dateFormatterPrint.dateFormat = "M/dd h:mma"
-
-    return dateFormatterPrint.string(from: date)
-}
-
 struct SpeakerDetailPresentationView_Previews: PreviewProvider {
     static var previews: some View {
         SpeakerDetailPresentationView(presentation: DataFile.shared.presentationsData[2])
