@@ -68,7 +68,7 @@ struct LoginView: View {
                         Text("Show")
                             .foregroundColor(.blue)
                             .font(.body)
-                            .offset(x: 130, y: -38)
+                            .offset(x: 125, y: -38)
                     }
                     
                     Spacer()

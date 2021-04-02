@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SignInView: View {
-    
+    @State private var isShowingSheetTabBar: Bool = false
+    @State private var isShowingSheetSign: Bool = false
     @State private var username = "example@icloud.com"
     @State private var password = "******************"
     @State private var name = "Matheus Homrich"
@@ -34,19 +35,18 @@ struct SignInView: View {
                     .font(.footnote)
                     .foregroundColor(.purple)
                 
-                Spacer()
-                
-            }.fixedSize()
-            
+            }
             VStack {
                 
                 VStack(alignment: .leading) {
-
+                    
                     HStack {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
                         Text("Name")
-                            .foregroundColor(.gray)                    }
+                            .foregroundColor(.gray)
+                        
+                    }
                     
                     VStack {
                         TextField("Matheus Homrich", text: $name)
@@ -64,10 +64,9 @@ struct SignInView: View {
                         
                     }
                     
-                    VStack {
-                        DatePicker("", selection: $selectedDate, displayedComponents: .date)
-                    }
-            
+                    
+                    DatePicker("", selection: $selectedDate, displayedComponents: .date)
+                        .offset(x:-180)
                     
                     HStack {
                         Image(systemName: "envelope")
@@ -103,21 +102,30 @@ struct SignInView: View {
                         
                         Text("Show")
                             .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .offset(x:125, y:-38)
                     }
                     
+                    Spacer()
                     
                 }.padding(.horizontal, 50)
                 .padding(.vertical)
                 
                 VStack {
                     
-                    Text("Register for the event")
-                        .frame(minWidth: 0, maxWidth: 250)
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.purple)
-                        .cornerRadius(10)
-                        .font(.headline)
+                    Button {
+                        self.isShowingSheetTabBar = true
+                    } label: {
+                        Text("Register for the event")
+                            .frame(minWidth: 0, maxWidth: 250)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.purple)
+                            .cornerRadius(10)
+                            .font(.headline)
+                    }
+                    .fullScreenCover(isPresented: $isShowingSheetTabBar, content: {
+                        TabBarView()
+                    })
                     Button {
                         self.isShowingSheetLogin = true
                     } label: {
@@ -129,7 +137,7 @@ struct SignInView: View {
                     .fullScreenCover(isPresented: $isShowingSheetLogin, content: {
                         LoginView()
                     })
-
+                    
                 }
             }
         }
