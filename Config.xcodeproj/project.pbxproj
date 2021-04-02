@@ -58,6 +58,7 @@
 		7148302D2614267700098292 /* SpeakerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302C2614267700098292 /* SpeakerItem.swift */; };
 		714830302614268200098292 /* SpeakersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148302F2614268200098292 /* SpeakersView.swift */; };
 		71483033261426AC00098292 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71483032261426AC00098292 /* CircleImage.swift */; };
+		719ED52426168B8C007AA019 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719ED52326168B8C007AA019 /* AccountView.swift */; };
 		71DD05872616302D001BCE6A /* SpeakerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD05852616302D001BCE6A /* SpeakerDetails.swift */; };
 		71DD05882616302D001BCE6A /* SpeakerDetailPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DD05862616302D001BCE6A /* SpeakerDetailPresentationView.swift */; };
 /* End PBXBuildFile section */
@@ -120,6 +121,7 @@
 		7148302C2614267700098292 /* SpeakerItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerItem.swift; sourceTree = "<group>"; };
 		7148302F2614268200098292 /* SpeakersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakersView.swift; sourceTree = "<group>"; };
 		71483032261426AC00098292 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		719ED52326168B8C007AA019 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		71DD05852616302D001BCE6A /* SpeakerDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetails.swift; sourceTree = "<group>"; };
 		71DD05862616302D001BCE6A /* SpeakerDetailPresentationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerDetailPresentationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +179,7 @@
 		6D1BDA3E2612505E00C44C6C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				719ED52226168B4A007AA019 /* Account */,
 				6DD5BCC2261515C2006E840F /* MainViews */,
 				6DD5BCC1261515A9006E840F /* Presentation */,
 				6DD5BCC02615159C006E840F /* Other */,
@@ -321,6 +324,14 @@
 			path = Inter;
 			sourceTree = "<group>";
 		};
+		719ED52226168B4A007AA019 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				719ED52326168B8C007AA019 /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +431,7 @@
 				6DFCBB712613A6F40036A995 /* PresentationRow.swift in Sources */,
 				6D30B9572613ADE2005287BA /* SwitchColors.swift in Sources */,
 				6DFCBB682613A6BA0036A995 /* TopBorderView.swift in Sources */,
+				719ED52426168B8C007AA019 /* AccountView.swift in Sources */,
 				6D9C16FE2615003000E9A9E1 /* Onboarding2View.swift in Sources */,
 				6D9C16F72614FFDF00E9A9E1 /* OnboardingView.swift in Sources */,
 				714830302614268200098292 /* SpeakersView.swift in Sources */,

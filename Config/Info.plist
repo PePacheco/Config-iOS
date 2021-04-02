@@ -41,11 +41,11 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Inter-SemiBold.ttf</string>
-		<string>Inter-Medium.ttf</string>
-		<string>RobotoMono-Bold.ttf</string>
 		<string>Inter-Regular.ttf</string>
+		<string>Inter-Medium.ttf</string>
 		<string>Inter-Bold.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
+		<string>RobotoMono-Bold.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
