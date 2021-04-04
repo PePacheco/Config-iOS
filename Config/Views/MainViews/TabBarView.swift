@@ -36,7 +36,8 @@ struct TabBarView: View {
                         Text("Speakers")
                     }
                     .tag(Tabs.speakers)
-                Text("Account")
+                
+                AccountView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Account")

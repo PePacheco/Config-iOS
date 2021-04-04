@@ -31,8 +31,10 @@ struct AccountView: View {
                     HStack {
                         Image(systemName: "person")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Age")
                             .foregroundColor(.gray)
+                            .font(.body)
                     }
                     
                     ZStack {
@@ -43,6 +45,7 @@ struct AccountView: View {
                             Text("22")
                                 .foregroundColor(Color.black)
                                 .padding(.leading, 11)
+                                .font(.body)
                             Spacer()
                         }
                     }
@@ -50,8 +53,10 @@ struct AccountView: View {
                     HStack {
                         Image(systemName: "envelope")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Email")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
@@ -62,13 +67,16 @@ struct AccountView: View {
                         TextField("example@icloud.com", text: $username)
                             .foregroundColor(Color.black)
                             .padding(.leading, 11)
+                            .font(.body)
                     }
                     
                     HStack {
                         Image(systemName: "lock")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("Password")
                             .foregroundColor(.gray)
+                            .font(.body)
                         
                     }
                     
@@ -79,28 +87,37 @@ struct AccountView: View {
                         SecureField("*************", text: $password)
                             .foregroundColor(Color.black)
                             .padding(.leading, 11)
+                            .font(.body)
                     }
                     
                     HStack {
                         Image(systemName: "questionmark")
                             .foregroundColor(.gray)
+                            .font(.body)
                         Text("FAQ")
                             .foregroundColor(.gray)
+                            .font(.body)
                     }
                     .padding(.bottom, 1)
                     
                     VStack(alignment: .leading, spacing: 25) {
                         Text("How do I join the day of the event? \nConfig will be held on an online events platform called Hopin. As part of the registration process, you’ll create an account on Hopin and use that account to log into the event day of.")
+                            .font(.footnote)
                         
                         Text("Will Config be recorded? \nAll Config sessions will be recorded and shared with all event registrants one month after the event. You can subscribe to our YouTube channel at youtube.com/figmadesign.")
+                            .font(.footnote)
                         
                         Text("How do I RSVP for sessions? \nNo need to RSVP in advance. You’ll be able to choose your sessions day-of, there are no limits to attendees.")
+                            .font(.footnote)
                         
                         Text("What is Config? \nConfig is a Figma’s annual conference where users come together to learn from each other. This year, it’ll take place virtually over two days.")
+                            .font(.footnote)
                         
                         Text("What can I expect at Config? \nYou can expect a great lineup of speakers, opportunities to network with other attendees, space to ask your burning Figma questions, and to connect with people from around the world. We believe that everyone should have the equal opportunity to fully participate and will do our best to make our event accessible to all attendees. We will provide closed captioning wherever possible and will work with speakers to ensure presentations are accessible to attendees with vision impairment or low vision. For this specific event all content will be in English.")
+                            .font(.footnote)
                         
                         Text("What is expected of me? \nWe have a Code of Conduct that applies to all Figma community spaces, both online and off. We expect all Config attendees to adhere to the Code of Conduct before, during, and after the conference.")
+                            .font(.footnote)
                     }
                     .font(Font.custom("Inter-Regular", fixedSize: 17))
                     .multilineTextAlignment(.leading)
