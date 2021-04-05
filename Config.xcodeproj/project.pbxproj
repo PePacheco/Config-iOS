@@ -246,6 +246,7 @@
 		6DD5BCC1261515A9006E840F /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				6D30B9532613A717005287BA /* ScheduleView.swift */,
 				6DFCBB702613A6F40036A995 /* PresentationRow.swift */,
 				6DFCBB6D2613A6E80036A995 /* PresentationCard.swift */,
 			);
@@ -258,7 +259,6 @@
 				5D7DAAC72614E2C0006886F4 /* TabBarView.swift */,
 				4EF4EB992613B32B00E9C5BA /* LoginView.swift */,
 				6D1BDA2F26124F3600C44C6C /* ContentView.swift */,
-				6D30B9532613A717005287BA /* ScheduleView.swift */,
 				4EF4EBA32613C11D00E9C5BA /* SignInView.swift */,
 			);
 			path = MainViews;

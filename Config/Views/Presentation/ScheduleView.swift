@@ -19,8 +19,7 @@ struct ScheduleView: View {
             }
             
             Text("Wednesday, April 21st")
-                .font(Font.custom("San-Francisco", size: 25.0))
-                .fontWeight(.bold)
+                .font(.system(size: 25, weight: .bold))
                 .padding(.top, 20)
             
             PresentationRow(presentations: [DataFile.shared.presentationsData[0]], date: DataFile.shared.presentationsData[0].date)
