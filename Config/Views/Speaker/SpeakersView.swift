@@ -11,6 +11,7 @@ struct SpeakersView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: nil) {
+                Spacer()
                 ForEach (DataFile.shared.speakersData) { speaker in
                     NavigationLink(destination: SpeakerDetails(speaker: speaker)) {
                         SpeakerItem(speaker: speaker)
