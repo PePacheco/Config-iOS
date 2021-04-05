@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     @State private var isShowingSheetTabBar: Bool = false
     @State private var isShowingSheetSign: Bool = false
     @State private var username = "example@icloud.com"
@@ -18,10 +20,10 @@ struct LoginView: View {
             Text("Welcome back!")
                 .font(Font.custom("Inter-Bold", size: 30))
                 .padding(.top, 10)
-                .foregroundColor(.black)
+                .foregroundColor(Color("dynamic-color"))
                 .padding(.bottom, 88)
             
-            Image("Logo")
+            Image(colorScheme == .dark ? "Logo-Dark" : "Logo")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 233.29, height: 80, alignment: .center)
@@ -41,7 +43,7 @@ struct LoginView: View {
                     }
                     VStack {
                         TextField("example@icloud.com", text: $username)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color("dynamic-color"))
                             .font(Font.custom("Inter-SemiBold", size: 17))
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
@@ -60,7 +62,7 @@ struct LoginView: View {
                     
                     VStack {
                         TextField("*************", text: $password)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color("dynamic-color"))
                             .font(Font.custom("Inter-SemiBold", size: 17))
 
                         Rectangle()
@@ -68,7 +70,7 @@ struct LoginView: View {
                             .foregroundColor(Color.gray)
                         
                         Text("Show")
-                            .foregroundColor(.purple)
+                            .foregroundColor(Color("project-purple"))
                             .font(Font.custom("Inter-SemiBold", size: 15))
                             .offset(x: 125, y: -38)
                     }
@@ -87,7 +89,7 @@ struct LoginView: View {
                             .frame(width: 314)
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.purple)
+                            .background(Color("project-purple"))
                             .cornerRadius(4)
                             .font(Font.custom("Inter-Bold", size: 20))
                     }
@@ -100,7 +102,7 @@ struct LoginView: View {
                     } label: {
                         Text("Don't have an account? Sign up")
                             .font(Font.custom("Inter-SemiBold", size: 15))
-                            .foregroundColor(.purple)
+                            .foregroundColor(Color("project-purple"))
                     }
                     .fullScreenCover(isPresented: $isShowingSheetSign, content: {
                         SignInView()

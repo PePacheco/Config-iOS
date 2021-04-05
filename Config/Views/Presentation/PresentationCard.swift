@@ -29,7 +29,7 @@ struct NormalPresentation: View {
                 Rectangle()
                     .frame(width: 257, height: 24, alignment: .center)
                     .foregroundColor(switchColors(color: presentation.bannerName))
-                    .border(Color.black, width: 4)
+                    .border(Color("dynamic-color"), width: 4)
                     .offset(x: 4)
                 
                 Text(presentation.title)
@@ -50,7 +50,7 @@ struct NormalPresentation: View {
         }
         .frame(width: 257, height: 170)
         //.border(width: 25, edges: [.top], color: switchColors(color: presentation.bannerName))
-        .border(Color.black, width: 4)
+        .border(Color("dynamic-color"), width: 4)
     }
 }
 
@@ -63,7 +63,7 @@ struct MainPresentation: View {
                     .resizable()
                     .frame(width: 100, height: 100)
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.black, lineWidth: 4))
+                    .overlay(Circle().stroke(Color("dynamic-color"), lineWidth: 4))
                 Text(presentation.speakers[0].name)
                     .font(Font.custom("RobotoMono-Bold", size: 15))
                 Text(presentation.speakers[0].role)
@@ -85,8 +85,8 @@ struct MainPresentation: View {
             .padding(.top, 20)
         }
         .frame(width: 372, height: 200)
-        .border(Color.black, width: 4)
-        .border(width: 25, edges: [.top], color: .black)
+        .border(Color("dynamic-color"), width: 4)
+        .border(width: 25, edges: [.top], color: Color("dynamic-color"))
     }
 }
 

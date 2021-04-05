@@ -12,7 +12,7 @@ struct SearchBar: View {
         VStack (spacing: 10){
             HStack(alignment: .center) {
                 Image(systemName: "magnifyingglass")
-                    .foregroundColor(Color(UIColor.black))
+                    .foregroundColor(Color.black)
                     .padding(.leading, 10)
                 
                 Text("Search")
@@ -22,7 +22,7 @@ struct SearchBar: View {
                 Spacer()
                 
                 Image(systemName: "mic.fill")
-                    .foregroundColor(Color(UIColor.black))
+                    .foregroundColor(Color.black)
                     .padding(.trailing, 10)
             }
                 .frame(width: 385, height: 40)

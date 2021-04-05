@@ -45,10 +45,10 @@ struct TabBarView: View {
                     .tag(Tabs.account)
             }
             .tabViewStyle(DefaultTabViewStyle())
-            .accentColor(.purple)
+            .accentColor(Color("project-purple"))
             .navigationTitle(tabName)
         }
-        .foregroundColor(.black)
+        .foregroundColor(Color("dynamic-color"))
     }
 }
 

@@ -55,7 +55,7 @@ struct KeynoteDetail: View {
                     label: {
                         SpeakerItem(speaker: speaker)
                             .padding(10)
-                            .foregroundColor(.black)
+                            .foregroundColor(Color("dynamic-color"))
                     })
             }
         }

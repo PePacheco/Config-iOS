@@ -22,7 +22,7 @@ struct Filter: View {
         .cornerRadius(16)
         .overlay(
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.black, lineWidth: 2)
+                .stroke(Color("dynamic-color"), lineWidth: 2)
         )
     }
 }

@@ -19,7 +19,7 @@ struct SpeakerDetailPresentationView: View {
                 .kerning(-0.64)
                 .frame(width: 365, height: 48, alignment: .center)
                 .background(switchColors(color: presentation.bannerName))
-                .border(Color.black, width: 4)
+                .border(Color("dynamic-color"), width: 4)
             
             VStack(alignment: .leading, spacing: 8) {
                 Text(presentation.title)
@@ -36,7 +36,7 @@ struct SpeakerDetailPresentationView: View {
             Spacer()
         }
             .frame(width: 365, height: 202)
-            .border(Color.black, width: 4)
+            .border(Color("dynamic-color"), width: 4)
     }
 }
 

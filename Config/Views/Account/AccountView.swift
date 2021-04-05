@@ -20,7 +20,7 @@ struct AccountView: View {
                         .resizable()
                         .scaledToFit()
                         .clipShape(Circle())
-                        .overlay(Circle().stroke(Color.black, lineWidth: 4))
+                        .overlay(Circle().stroke(Color("dynamic-color"), lineWidth: 4))
                         .frame(width: 200, height: 165, alignment: .center)
                     
                     Text(self.name)
@@ -43,7 +43,7 @@ struct AccountView: View {
                             .foregroundColor(Color("account-bg"))
                         HStack {
                             Text("22")
-                                .foregroundColor(Color.black)
+                                .foregroundColor(.black)
                                 .padding(.leading, 11)
                                 .font(.body)
                             Spacer()
@@ -66,7 +66,7 @@ struct AccountView: View {
                             .frame(height: 38, alignment: .bottom)
                             .foregroundColor(Color("account-bg"))
                         TextField("example@icloud.com", text: $username)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(.black)
                             .padding(.leading, 11)
                             .font(.body)
                     }
@@ -87,7 +87,7 @@ struct AccountView: View {
                             .frame(height: 38, alignment: .bottom)
                             .foregroundColor(Color("account-bg"))
                         SecureField("*************", text: $password)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(.black)
                             .padding(.leading, 11)
                             .font(.body)
                     }

@@ -23,14 +23,14 @@ struct SignInView: View {
                 Text("Let's be bezier friends.")
                     .font(Font.custom("Inter-Bold", size: 25))
                     .padding(.top, 10)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("dynamic-color"))
                     .padding(.bottom, 50)
                 
                 Image("matheushomrich")
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.black, lineWidth: 4))
+                    .overlay(Circle().stroke(Color("dynamic-color"), lineWidth: 4))
                     .frame(height: 130, alignment: .center)
                     .padding(.bottom, 14)
                 
@@ -52,7 +52,7 @@ struct SignInView: View {
                     }
                     
                     TextField("Matheus Homrich", text: $name)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color("dynamic-color"))
                         .font(Font.custom("Inter-SemiBold", size: 17))
                     Rectangle()
                         .frame(height: 1.0, alignment: .bottom)
@@ -82,7 +82,7 @@ struct SignInView: View {
                     }
                     
                     TextField("example@icloud.com", text: $username)
-                        .foregroundColor(Color.black)
+                        .foregroundColor(Color("dynamic-color"))
                         .font(Font.custom("Inter-SemiBold", size: 17))
                     Rectangle()
                         .frame(height: 1.0, alignment: .bottom)
@@ -101,7 +101,7 @@ struct SignInView: View {
                     
                     VStack {
                         TextField("*************", text: $password)
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color("dynamic-color"))
                             .font(Font.custom("Inter-SemiBold", size: 17))
 
                         Rectangle()
