@@ -22,7 +22,14 @@ struct Filter: View {
         .cornerRadius(16)
         .overlay(
             RoundedRectangle(cornerRadius: 16)
-                .stroke(Color.black, lineWidth: 3)
+                .stroke(Color.black, lineWidth: 2)
         )
     }
 }
+
+struct Schedule_Filter: PreviewProvider {
+    static var previews: some View {
+        Filter(color: UIColor(Color("project-green")), title: "Embracing the mess", width: 140)
+    }
+}
+

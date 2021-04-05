@@ -26,6 +26,7 @@ struct SpeakerItemInternal: View {
                     .font(Font.custom("RobotoMono-Bold", size: 20))
                 Text(role)
                     .font(Font.custom("Inter-Regular", size: 12))
+                    .frame(maxWidth: 200, alignment: .leading)
             }
         }
     }

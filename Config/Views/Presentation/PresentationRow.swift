@@ -14,8 +14,8 @@ struct PresentationRow: View {
         VStack(alignment: .leading) {
             Text(date)
                 .bold()
-                .font(.subheadline)
-                .padding(.top, 20)
+                .font(Font.custom("RobotoMono-Bold", size: 20))
+                .padding(.bottom, 16)
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .center, spacing: 20) {
@@ -27,6 +27,12 @@ struct PresentationRow: View {
                 }
             }
         }
+    }
+}
+
+struct PresentationRow_Previews: PreviewProvider {
+    static var previews: some View {
+        PresentationRow(presentations: [DataFile.shared.presentationsData[0]], date: DataFile.shared.presentationsData[0].date)
     }
 }
 

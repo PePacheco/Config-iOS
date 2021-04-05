@@ -24,17 +24,20 @@ struct SignInView: View {
                     .font(Font.custom("Inter-Bold", size: 25))
                     .padding(.top, 10)
                     .foregroundColor(.black)
+                    .padding(.bottom, 50)
                 
                 Image("matheushomrich")
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
                     .overlay(Circle().stroke(Color.black, lineWidth: 4))
-                    .frame(width: 200, height: 165, alignment: .center)
+                    .frame(height: 130, alignment: .center)
+                    .padding(.bottom, 14)
                 
                 Text("Change profile picture")
-                    .font(.footnote)
-                    .foregroundColor(.purple)
+                    .font(Font.custom("Inter-SemiBold", size: 15))
+                    .foregroundColor(Color("project-purple"))
+                    .padding(.bottom, 20)
                 
             VStack(alignment: .leading) {
                     
@@ -44,13 +47,13 @@ struct SignInView: View {
                             .font(.body)
                         Text("Name")
                             .foregroundColor(.gray)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 15))
+
                     }
                     
                     TextField("Matheus Homrich", text: $name)
                         .foregroundColor(Color.black)
-                        .font(.body)
+                        .font(Font.custom("Inter-SemiBold", size: 17))
                     Rectangle()
                         .frame(height: 1.0, alignment: .bottom)
                         .foregroundColor(Color.gray)
@@ -59,13 +62,14 @@ struct SignInView: View {
                     HStack {
                         Label("Birthday", systemImage: "calendar")
                             .foregroundColor(.gray)
-                            .font(.body)
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                     }
                     
                     
                     DatePicker("", selection: $selectedDate, displayedComponents: .date)
                         .offset(x:-215)
                         .padding(.bottom, 40)
+                        .accentColor(Color("project-purple"))
                     
                     HStack {
                         Image(systemName: "envelope")
@@ -73,13 +77,13 @@ struct SignInView: View {
                             .font(.body)
                         Text("Email")
                             .foregroundColor(.gray)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 15))
+
                     }
                     
                     TextField("example@icloud.com", text: $username)
                         .foregroundColor(Color.black)
-                        .font(.body)
+                        .font(Font.custom("Inter-SemiBold", size: 17))
                     Rectangle()
                         .frame(height: 1.0, alignment: .bottom)
                         .foregroundColor(Color.gray)
@@ -91,24 +95,24 @@ struct SignInView: View {
                             .font(.body)
                         Text("Password")
                             .foregroundColor(.gray)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 15))
+
                     }
                     
                     VStack {
                         TextField("*************", text: $password)
                             .foregroundColor(Color.black)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 17))
+
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
                             .font(.body)
                         
                         Text("Show")
-                            .foregroundColor(.purple)
+                            .foregroundColor(Color("project-purple"))
                             .offset(x:125, y:-38)
-                            .font(.body)
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                     }
                     
                 }.padding(.horizontal, 50)
@@ -123,9 +127,9 @@ struct SignInView: View {
                             .frame(width: 314)
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.purple)
-                            .cornerRadius(10)
-                            .font(.headline)
+                            .background(Color("project-purple"))
+                            .cornerRadius(4)
+                            .font(Font.custom("Inter-Bold", size: 20))
                     }
                     .fullScreenCover(isPresented: $isShowingSheetTabBar, content: {
                         TabBarView()
@@ -134,9 +138,8 @@ struct SignInView: View {
                         self.isShowingSheetLogin = true
                     } label: {
                         Text("Already have an account? Login")
-                            .font(.footnote)
-                            .foregroundColor(.purple)
-                            .underline()
+                            .font(Font.custom("Inter-SemiBold", size: 15))
+                            .foregroundColor(Color("project-purple"))
                     }
                     .fullScreenCover(isPresented: $isShowingSheetLogin, content: {
                         LoginView()

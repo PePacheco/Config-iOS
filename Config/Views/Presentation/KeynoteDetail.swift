@@ -59,7 +59,7 @@ struct KeynoteDetail: View {
                     })
             }
         }
-        .padding(10)
+        .padding(26)
         .navigationBarTitle("Keynote", displayMode: .inline)
     }
 }

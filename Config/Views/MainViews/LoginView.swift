@@ -16,16 +16,18 @@ struct LoginView: View {
     var body: some View {
         VStack {
             Text("Welcome back!")
-                .font(Font.custom("Inter-Bold", size: 25))
+                .font(Font.custom("Inter-Bold", size: 30))
                 .padding(.top, 10)
                 .foregroundColor(.black)
+                .padding(.bottom, 88)
             
             Image("Logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 200, height: 150, alignment: .center)
+                .frame(width: 233.29, height: 80, alignment: .center)
+                .padding(.bottom, 125)
             
-            Spacer()
+            
             
             VStack {
                 VStack (alignment: .leading) {
@@ -35,17 +37,17 @@ struct LoginView: View {
                             .font(.body)
                         Text("Email")
                             .foregroundColor(.gray)
-                            .font(.body)
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                     }
                     VStack {
                         TextField("example@icloud.com", text: $username)
                             .foregroundColor(Color.black)
-                            .font(.body)
+                            .font(Font.custom("Inter-SemiBold", size: 17))
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
                     }
-                    .padding(.bottom, 25)
+                    .padding(.bottom, 40)
                     
                     HStack {
                         Image(systemName: "lock")
@@ -53,21 +55,21 @@ struct LoginView: View {
                             .font(.body)
                         Text("Password")
                             .foregroundColor(.gray)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                     }
+                    
                     VStack {
                         TextField("*************", text: $password)
                             .foregroundColor(Color.black)
-                            .font(.body)
-                        
+                            .font(Font.custom("Inter-SemiBold", size: 17))
+
                         Rectangle()
                             .frame(height: 1.0, alignment: .bottom)
                             .foregroundColor(Color.gray)
                         
                         Text("Show")
                             .foregroundColor(.purple)
-                            .font(.body)
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                             .offset(x: 125, y: -38)
                     }
                     
@@ -75,7 +77,6 @@ struct LoginView: View {
                     
                 }
                 .padding(.horizontal, 50)
-                .padding(.top, 100)
                 
                 VStack {
                     
@@ -87,8 +88,8 @@ struct LoginView: View {
                             .padding()
                             .foregroundColor(.white)
                             .background(Color.purple)
-                            .cornerRadius(10)
-                            .font(.headline)
+                            .cornerRadius(4)
+                            .font(Font.custom("Inter-Bold", size: 20))
                     }
                     .fullScreenCover(isPresented: $isShowingSheetTabBar, content: {
                         TabBarView()
@@ -98,9 +99,8 @@ struct LoginView: View {
                         self.isShowingSheetSign = true
                     } label: {
                         Text("Don't have an account? Sign up")
-                            .font(.footnote)
+                            .font(Font.custom("Inter-SemiBold", size: 15))
                             .foregroundColor(.purple)
-                            .underline()
                     }
                     .fullScreenCover(isPresented: $isShowingSheetSign, content: {
                         SignInView()
