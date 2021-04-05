@@ -15,7 +15,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            Text("Let's be bezier friends.")
+            Text("Welcome back!")
                 .font(Font.custom("Inter-Bold", size: 25))
                 .padding(.top, 10)
                 .foregroundColor(.black)
@@ -66,7 +66,7 @@ struct LoginView: View {
                             .foregroundColor(Color.gray)
                         
                         Text("Show")
-                            .foregroundColor(.blue)
+                            .foregroundColor(.purple)
                             .font(.body)
                             .offset(x: 125, y: -38)
                     }
@@ -83,7 +83,7 @@ struct LoginView: View {
                         self.isShowingSheetTabBar = true
                     } label: {
                         Text("Login")
-                            .frame(minWidth: 0, maxWidth: 250)
+                            .frame(width: 314)
                             .padding()
                             .foregroundColor(.white)
                             .background(Color.purple)

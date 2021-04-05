@@ -49,6 +49,7 @@ struct AccountView: View {
                             Spacer()
                         }
                     }
+                    .padding(.bottom, 20)
                     
                     HStack {
                         Image(systemName: "envelope")
@@ -69,6 +70,7 @@ struct AccountView: View {
                             .padding(.leading, 11)
                             .font(.body)
                     }
+                    .padding(.bottom, 20)
                     
                     HStack {
                         Image(systemName: "lock")
@@ -89,6 +91,7 @@ struct AccountView: View {
                             .padding(.leading, 11)
                             .font(.body)
                     }
+                    .padding(.bottom, 20)
                     
                     HStack {
                         Image(systemName: "questionmark")
@@ -100,24 +103,48 @@ struct AccountView: View {
                     }
                     .padding(.bottom, 1)
                     
-                    VStack(alignment: .leading, spacing: 25) {
-                        Text("How do I join the day of the event? \nConfig will be held on an online events platform called Hopin. As part of the registration process, you’ll create an account on Hopin and use that account to log into the event day of.")
+                    VStack(alignment: .leading) {
+                        VStack (alignment: .leading){
+                            Text("How do I join the day of the event?")
+                                .font(.footnote)
+                                .bold()
+                            Text("Config will be held on an online events platform called Hopin. As part of the registration process, you’ll create an account on Hopin and use that account to log into the event day of.")
+                                .font(.footnote)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.bottom, 25)
+                            Text("Will Config be recorded?")
+                                .font(.footnote)
+                                .bold()
+                            Text("All Config sessions will be recorded and shared with all event registrants one month after the event. You can subscribe to our YouTube channel at youtube.com/figmadesign.")
+                                .font(.footnote)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.bottom, 25)
+                            Text("How do I RSVP for sessions?")
+                                .font(.footnote)
+                                .bold()
+                            Text("No need to RSVP in advance. You’ll be able to choose your sessions day-of, there are no limits to attendees.")
+                                .font(.footnote)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.bottom, 25)
+                        }
+                        Text("What is Config?")
                             .font(.footnote)
-                        
-                        Text("Will Config be recorded? \nAll Config sessions will be recorded and shared with all event registrants one month after the event. You can subscribe to our YouTube channel at youtube.com/figmadesign.")
+                            .bold()
+                        Text("Config is a Figma’s annual conference where users come together to learn from each other. This year, it’ll take place virtually over two days.")
                             .font(.footnote)
-                        
-                        Text("How do I RSVP for sessions? \nNo need to RSVP in advance. You’ll be able to choose your sessions day-of, there are no limits to attendees.")
+                            .padding(.bottom, 25)
+                        Text("What can I expect at Config?")
                             .font(.footnote)
-                        
-                        Text("What is Config? \nConfig is a Figma’s annual conference where users come together to learn from each other. This year, it’ll take place virtually over two days.")
+                            .bold()
+                        Text("You can expect a great lineup of speakers, opportunities to network with other attendees, space to ask your burning Figma questions, and to connect with people from around the world. We believe that everyone should have the equal opportunity to fully participate and will do our best to make our event accessible to all attendees. We will provide closed captioning wherever possible and will work with speakers to ensure presentations are accessible to attendees with vision impairment or low vision. For this specific event all content will be in English.")
                             .font(.footnote)
-                        
-                        Text("What can I expect at Config? \nYou can expect a great lineup of speakers, opportunities to network with other attendees, space to ask your burning Figma questions, and to connect with people from around the world. We believe that everyone should have the equal opportunity to fully participate and will do our best to make our event accessible to all attendees. We will provide closed captioning wherever possible and will work with speakers to ensure presentations are accessible to attendees with vision impairment or low vision. For this specific event all content will be in English.")
+                            .padding(.bottom, 25)
+                        Text("What is expected of me?")
                             .font(.footnote)
-                        
-                        Text("What is expected of me? \nWe have a Code of Conduct that applies to all Figma community spaces, both online and off. We expect all Config attendees to adhere to the Code of Conduct before, during, and after the conference.")
+                            .bold()
+                        Text("We have a Code of Conduct that applies to all Figma community spaces, both online and off. We expect all Config attendees to adhere to the Code of Conduct before, during, and after the conference.")
                             .font(.footnote)
+                            .padding(.bottom, 25)
                     }
                     .font(Font.custom("Inter-Regular", fixedSize: 17))
                     .multilineTextAlignment(.leading)

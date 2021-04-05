@@ -235,7 +235,6 @@
 		6DD5BCC02615159C006E840F /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				5D7DAAC42614E2A2006886F4 /* KeynoteDetail.swift */,
 				6DFCBB6A2613A6D00036A995 /* SearchBar.swift */,
 				6DF0A2E42614926300F39E12 /* Filter.swift */,
 				71483032261426AC00098292 /* CircleImage.swift */,
@@ -249,6 +248,7 @@
 				6D30B9532613A717005287BA /* ScheduleView.swift */,
 				6DFCBB702613A6F40036A995 /* PresentationRow.swift */,
 				6DFCBB6D2613A6E80036A995 /* PresentationCard.swift */,
+				5D7DAAC42614E2A2006886F4 /* KeynoteDetail.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";

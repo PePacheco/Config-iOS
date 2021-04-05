@@ -55,6 +55,7 @@ struct SpeakerDetails: View {
                 Spacer()
             }
         }
+        .padding(26)
     }
 }
 

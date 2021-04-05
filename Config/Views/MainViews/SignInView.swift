@@ -36,10 +36,7 @@ struct SignInView: View {
                     .font(.footnote)
                     .foregroundColor(.purple)
                 
-            
-            VStack {
-                
-                VStack(alignment: .leading) {
+            VStack(alignment: .leading) {
                     
                     HStack {
                         Image(systemName: "person")
@@ -51,28 +48,24 @@ struct SignInView: View {
                         
                     }
                     
-                    VStack {
-                        TextField("Matheus Homrich", text: $name)
-                            .foregroundColor(Color.black)
-                            .font(.body)
-                        Rectangle()
-                            .frame(height: 1.0, alignment: .bottom)
-                            .foregroundColor(Color.gray)
-                    }
+                    TextField("Matheus Homrich", text: $name)
+                        .foregroundColor(Color.black)
+                        .font(.body)
+                    Rectangle()
+                        .frame(height: 1.0, alignment: .bottom)
+                        .foregroundColor(Color.gray)
+                        .padding(.bottom, 40)
                     
                     HStack {
-                        Image(systemName: "figure.stand")
+                        Label("Birthday", systemImage: "calendar")
                             .foregroundColor(.gray)
                             .font(.body)
-                        Text("Birthday")
-                            .foregroundColor(.gray)
-                            .font(.body)
-                        
                     }
                     
                     
                     DatePicker("", selection: $selectedDate, displayedComponents: .date)
-                        .offset(x:-180)
+                        .offset(x:-215)
+                        .padding(.bottom, 40)
                     
                     HStack {
                         Image(systemName: "envelope")
@@ -84,14 +77,13 @@ struct SignInView: View {
                         
                     }
                     
-                    VStack {
-                        TextField("example@icloud.com", text: $username)
-                            .foregroundColor(Color.black)
-                            .font(.body)
-                        Rectangle()
-                            .frame(height: 1.0, alignment: .bottom)
-                            .foregroundColor(Color.gray)
-                    }
+                    TextField("example@icloud.com", text: $username)
+                        .foregroundColor(Color.black)
+                        .font(.body)
+                    Rectangle()
+                        .frame(height: 1.0, alignment: .bottom)
+                        .foregroundColor(Color.gray)
+                        .padding(.bottom, 40)
                     
                     HStack {
                         Image(systemName: "lock")
@@ -114,12 +106,10 @@ struct SignInView: View {
                             .font(.body)
                         
                         Text("Show")
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(.purple)
                             .offset(x:125, y:-38)
                             .font(.body)
                     }
-                    
-                    Spacer()
                     
                 }.padding(.horizontal, 50)
                 .padding(.vertical)
@@ -130,7 +120,7 @@ struct SignInView: View {
                         self.isShowingSheetTabBar = true
                     } label: {
                         Text("Register for the event")
-                            .frame(minWidth: 0, maxWidth: 250)
+                            .frame(width: 314)
                             .padding()
                             .foregroundColor(.white)
                             .background(Color.purple)
@@ -153,7 +143,6 @@ struct SignInView: View {
                     })
                     
                 }
-            }
         }
     }
 }
